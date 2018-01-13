@@ -24,6 +24,10 @@ a:link,a:visited,a:hover,a:active{
     margin-top: 150px;
 }
 
+.mb_20{
+    margin-bottom:20px;
+}
+
 .panel h4{
   text-align: center;
 }
@@ -132,3 +136,9 @@ a:link,a:visited,a:hover,a:active{
     width: 45%;
     height: 400px;
 }
+
+.table.table-bordered td{
+    text-align: center;
+    vertical-align: middle;
+}
+
