@@ -55,7 +55,7 @@ $(function(){
 
         $.ajax({
             type:"post",
-            url:"/employee/employeeLogout",
+            url:"/employee/employeeLogin",
             //dataType:"json",
             data:form.serialize(),//表单序列化
             success:function(info){
