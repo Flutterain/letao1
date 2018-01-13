@@ -29,4 +29,33 @@ $(function(){
         })
     }
 
+    //二级菜单的显示和影藏功能
+    $('.second').prev().on('click',function(){
+       $(this).next().slideToggle();
+    })
+
+    //侧边栏显示与隐藏
+    $('.icon_menu').on("click",function(){
+        $('.lt_aside').toggleClass('now');
+        $('.lt_main').toggleClass('now');
+    })
+
+  //退出功能，模态框
+    $('.icon_logout').on('click',function(){
+        $('#logoutModal').modal('show');
+    })
+
+    $('.btn_logout').off().on("click",function(){
+        $.ajax({
+            type:"get",
+            url:"/employee/employeeLogout",
+            success:function(info){
+                if(info.success){
+                    location.href="login.html";
+                }
+            }
+        });
+    })
+
+
 })
